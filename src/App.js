@@ -9,7 +9,7 @@ import Blog from './screens/Blog'
 const App = () => {
   return (
     <>
-      <Router basename='/rjbc-dev'>
+      <Router>
         <Navbar></Navbar>
 
         <Switch>
