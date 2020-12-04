@@ -61,7 +61,7 @@ const Experience = () => {
                 <h2 style={{ textAlign: 'center' }}>
                   <b>
                     {' '}
-                    <i class='fas fa-graduation-cap'></i> Education
+                    <i class='fas fa-graduation-cap'></i> Training
                   </b>
                 </h2>
 
