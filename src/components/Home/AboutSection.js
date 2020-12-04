@@ -1,16 +1,14 @@
 import React from 'react'
 import '../../static/css/AboutSection.css'
 
+import profilePhoto from '../../static/img/profile.jpg'
+
 const AboutSection = () => {
   return (
     <div>
       <div className='flex-container'>
         <div className='flex-item-left'>
-          <img
-            src='/images/profile.jpg'
-            alt='/'
-            className='responsive-img'
-          ></img>
+          <img src={profilePhoto} alt='/' className='responsive-img'></img>
         </div>
         <div className='flex-item-right'>
           <div className='portfolio_info_div'>

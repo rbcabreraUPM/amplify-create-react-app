@@ -5,12 +5,14 @@ import '../../static/css/HeroSection.css'
 
 import Typing from 'react-typing-animation'
 
+import CoverPhoto from '../../static/img/cover.png'
+
 const HeroSection = () => {
   const helloWorld = 'EVERYTHING STARTS WITH "HELLO WORLD"'
   return (
     <div
       className='hero-container'
-      style={{ backgroundImage: "url('/images/cover.png')" }}
+      style={{ backgroundImage: `url(${CoverPhoto})` }}
     >
       <h1> RJBC - DEV</h1>
       <Typing loop={true}>

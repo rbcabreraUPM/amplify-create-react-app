@@ -1,7 +1,6 @@
 import React from 'react'
 import '../static/css/Footer.css'
 
-import { Link } from 'react-router-dom'
 const Footer = ({ stickyStyle }) => {
   const footerStyle = stickyStyle
     ? 'footer-container sticky'
