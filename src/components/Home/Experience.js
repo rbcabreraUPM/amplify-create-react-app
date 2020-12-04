@@ -17,20 +17,19 @@ const Experience = () => {
                 <h2 style={{ textAlign: 'center' }}>
                   <b>
                     {' '}
-                    <i class='fas fa-briefcase'></i> Work
+                    <i className='fas fa-briefcase'></i> Work
                   </b>
                 </h2>
 
                 {jobs.map((job) => (
-                  <div>
-                    <br></br>
-                    <hr></hr>
-                    <p>{job.company}</p>
-                    <p> {job.role}</p>
-                    <p> {job.year}</p>
-
-                    <hr></hr>
-                    <br></br>
+                  <div className='card experience-card'>
+                    <div>
+                      <dl>
+                        <dt>{job.company}</dt>
+                        <dd>- {job.role}</dd>
+                        <dd>- {job.year}</dd>
+                      </dl>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -44,16 +43,37 @@ const Experience = () => {
                   </b>
                 </h2>
 
-                {education.map((educ) => (
-                  <div>
-                    <br></br>
-                    <hr></hr>
-                    <p>{educ.name}</p>
-                    <p> {educ.course}</p>
-                    <p> {educ.year}</p>
+                {education[1].map((educ) => (
+                  <div className='card'>
+                    <div>
+                      <dl>
+                        <dt>{educ.name}</dt>
+                        <dd>- {educ.course}</dd>
+                        <dd>- {educ.year}</dd>
+                      </dl>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className='card'>
+              <div className='container-experience'>
+                <h2 style={{ textAlign: 'center' }}>
+                  <b>
+                    {' '}
+                    <i class='fas fa-graduation-cap'></i> Education
+                  </b>
+                </h2>
 
-                    <hr></hr>
-                    <br></br>
+                {education[0].map((training) => (
+                  <div className='card'>
+                    <div>
+                      <dl>
+                        <dt>{training.name}</dt>
+                        <dd>- {training.training}</dd>
+                        <dd>- {training.year}</dd>
+                      </dl>
+                    </div>
                   </div>
                 ))}
               </div>

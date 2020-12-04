@@ -13,4 +13,15 @@ const education = [
   },
 ]
 
-export default education
+const trainings = [
+  {
+    _id: '1',
+    name: 'Orange and Bronze Software Labs Inc.',
+    training: 'MEAN Stack Training',
+    year: '2019',
+  },
+]
+
+const jsonData = [trainings, education]
+
+export default jsonData
