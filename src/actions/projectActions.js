@@ -9,7 +9,9 @@ export const listProjects = () => async (dispatch) => {
   try {
     dispatch({ type: PROJECT_LIST_REQUEST })
 
-    const { data } = await axios.get('/api/projects')
+    const { data } = await axios.get(
+      'http://rjbc-dev.herokuapp.com/api/projects'
+    )
 
     dispatch({
       type: PROJECT_LIST_SUCCESS,
