@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 // import screens
 import Home from './screens/Home'
 import Blog from './screens/Blog'
+import Projects from './screens/Projects'
 const App = () => {
   return (
     <>
@@ -14,7 +15,7 @@ const App = () => {
 
         <Switch>
           <Route path='/' exact component={Home}></Route>
-          <Route path='/projects' exact component={Blog}></Route>
+          <Route path='/projects' exact component={Projects}></Route>
           <Route path='/blog' exact component={Blog}></Route>
         </Switch>
       </Router>

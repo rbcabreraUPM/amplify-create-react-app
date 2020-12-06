@@ -1,23 +1,4 @@
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-  border-radius: 5px;
-  padding:10px;
-  margin:10px;
-  background-color: white;
-}
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.cards_container_experience{
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-  /* margin: 0 auto; */
-}
 
 img {
   border-radius: 5px 5px 0 0;

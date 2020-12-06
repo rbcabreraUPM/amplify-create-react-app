@@ -5,15 +5,16 @@ import '../../static/css/Cards.css'
 
 import education from '../../data/education'
 import jobs from '../../data/work'
+
 const Experience = () => {
   return (
-    <div style={{ backgroundColor: '#6ddeb1' }} className='cards'>
+    <div style={{ backgroundColor: '#6ddeb1' }} className='cards_custom'>
       <h1 style={{ fontSize: '60px' }}>Experience</h1>
-      <div className='cards__container_experience'>
-        <div className='cards__wrapper'>
-          <ul className='cards__items'>
-            <div className='card'>
-              <div className='container-experience'>
+      <div className='cards__container_experience_custom'>
+        <div className='cards__wrapper_custom'>
+          <ul className='cards__items_custom'>
+            <div className='card_custom'>
+              <div className='container-experience_custom'>
                 <h2 style={{ textAlign: 'center' }}>
                   <b>
                     {' '}
@@ -22,7 +23,7 @@ const Experience = () => {
                 </h2>
 
                 {jobs.map((job) => (
-                  <div className='card experience-card'>
+                  <div className='card_custom experience-card_custom'>
                     <div>
                       <dl>
                         <dt>{job.company}</dt>
@@ -34,17 +35,17 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-            <div className='card'>
-              <div className='container-experience'>
+            <div className='card_custom'>
+              <div className='container-experience_custom'>
                 <h2 style={{ textAlign: 'center' }}>
                   <b>
                     {' '}
-                    <i class='fas fa-graduation-cap'></i> Education
+                    <i className='fas fa-graduation-cap'></i> Education
                   </b>
                 </h2>
 
                 {education[1].map((educ) => (
-                  <div className='card'>
+                  <div className='card_custom'>
                     <div>
                       <dl>
                         <dt>{educ.name}</dt>
@@ -56,17 +57,17 @@ const Experience = () => {
                 ))}
               </div>
             </div>
-            <div className='card'>
-              <div className='container-experience'>
+            <div className='card_custom'>
+              <div className='container-experience_custom'>
                 <h2 style={{ textAlign: 'center' }}>
                   <b>
                     {' '}
-                   <i class="fas fa-desktop"></i> Training
+                    <i className='fas fa-desktop'></i> Training
                   </b>
                 </h2>
 
                 {education[0].map((training) => (
-                  <div className='card'>
+                  <div className='card_custom'>
                     <div>
                       <dl>
                         <dt>{training.name}</dt>
