@@ -26,7 +26,12 @@ const Projects = () => {
           <Loader type='ThreeDots' color='#00BFFF' height={80} width={80} />
         </div>
       ) : error ? (
-        <h3>{error}</h3>
+        <div className='center'>
+          <h1>
+            {' '}
+            <i className='fas fa-wrench'></i> COMING SOON
+          </h1>
+        </div>
       ) : (
         <div className='cards_custom'>
           <div className='cards__container_custom'>
