@@ -2,13 +2,15 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { listProjects } from '../actions/projectActions'
 
+import '../static/css/Cards.css'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+
 import Footer from '../components/Footer'
 import ProjectCards from '../components/Projects/ProjectCards'
-import '../static/css/Cards.css'
-import { Grid, Row } from 'react-flexbox-grid'
-
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import DeviceIcons from '../components/Projects/DeviceIcons'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 import Loader from 'react-loader-spinner'
+
 const Projects = () => {
   const dispatch = useDispatch()
 
@@ -39,17 +41,27 @@ const Projects = () => {
               <ul className='cards__items_custom'>
                 {projects.map((project) => (
                   <div className='card_custom card-project_custom'>
-                    <div>
-                      <h2>{project.name}</h2>
-                      <span>{project.description}</span>
-                      <Grid fluid>
-                        <Row>
-                          <ProjectCards
-                            technologies={project.technologies}
-                          ></ProjectCards>
-                        </Row>
-                      </Grid>
-                    </div>
+                    <Row>
+                      <Col></Col>
+                      <Col>
+                        <div>
+                          <h2>
+                            {project.name}{' '}
+                            <DeviceIcons
+                              devices={project.devices}
+                            ></DeviceIcons>
+                          </h2>
+                          <span>{project.description}</span>
+                          <Grid fluid>
+                            <Row>
+                              <ProjectCards
+                                technologies={project.technologies}
+                              ></ProjectCards>
+                            </Row>
+                          </Grid>
+                        </div>
+                      </Col>
+                    </Row>
                   </div>
                 ))}
               </ul>
