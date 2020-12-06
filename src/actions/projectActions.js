@@ -10,7 +10,7 @@ export const listProjects = () => async (dispatch) => {
     dispatch({ type: PROJECT_LIST_REQUEST })
 
     const { data } = await axios.get(
-      'http://rjbc-dev.herokuapp.com/api/projects'
+      'https://rjbc-dev.herokuapp.com/api/projects'
     )
 
     dispatch({
