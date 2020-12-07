@@ -40,7 +40,10 @@ const Projects = () => {
             <div className='cards__wrapper_custom'>
               <ul className='cards__items_custom'>
                 {projects.map((project) => (
-                  <div className='card_custom card-project_custom'>
+                  <div
+                    className='card_custom card-project_custom'
+                    style={{ width: '30%' }}
+                  >
                     <Row>
                       <Col></Col>
                       <Col>

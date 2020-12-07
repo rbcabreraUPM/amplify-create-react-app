@@ -8,8 +8,8 @@ import jobs from '../../data/work'
 
 const Experience = () => {
   return (
-    <div style={{ backgroundColor: '#6ddeb1' }} className='cards_custom'>
-      <h1 style={{ fontSize: '60px' }}>Experience</h1>
+    <div style={{ backgroundColor: 'black' }} className='cards_custom'>
+      <h1 style={{ fontSize: '60px', color: '#53f3b1' }}>Experience</h1>
       <div className='cards__container_experience_custom'>
         <div className='cards__wrapper_custom'>
           <ul className='cards__items_custom'>
