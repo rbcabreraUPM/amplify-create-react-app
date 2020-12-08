@@ -26,35 +26,39 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+      <nav className='navbar-custom'>
+        <div className='navbar-container-custom'>
+          <Link to='/' className='navbar-logo-custom' onClick={closeMobileMenu}>
             RJBC - DEV
             {/* <i class='fab fa-typo3' /> */}
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
+          <div className='menu-icon-custom' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+          <ul className={click ? 'nav-menu-custom active' : 'nav-menu-custom'}>
+            <li className='nav-item-custom'>
+              <Link
+                to='/'
+                className='nav-links-custom'
+                onClick={closeMobileMenu}
+              >
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav-item-custom'>
               <Link
                 to='/projects'
-                className='nav-links'
+                className='nav-links-custom'
                 onClick={closeMobileMenu}
               >
                 Projects
               </Link>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <Link to='/blog' className='nav-links' onClick={closeMobileMenu}>
                 Blog
               </Link>
-            </li>
+            </li> */}
 
             {/* <li>
               <Link

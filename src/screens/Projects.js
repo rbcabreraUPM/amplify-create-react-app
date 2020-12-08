@@ -6,10 +6,9 @@ import '../static/css/Cards.css'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 
 import Footer from '../components/Footer'
-import ProjectCards from '../components/Projects/ProjectCards'
-import DeviceIcons from '../components/Projects/DeviceIcons'
-import { Grid, Row, Col } from 'react-flexbox-grid'
+
 import Loader from 'react-loader-spinner'
+import ProjectsDiv from '../components/Projects/ProjectsDiv'
 
 const Projects = () => {
   const dispatch = useDispatch()
@@ -38,36 +37,7 @@ const Projects = () => {
         <div className='cards_custom'>
           <div className='cards__container_custom'>
             <div className='cards__wrapper_custom'>
-              <ul className='cards__items_custom'>
-                {projects.map((project) => (
-                  <div
-                    className='card_custom card-project_custom'
-                    style={{ width: '30%' }}
-                  >
-                    <Row>
-                      <Col></Col>
-                      <Col>
-                        <div>
-                          <h2>
-                            {project.name}{' '}
-                            <DeviceIcons
-                              devices={project.devices}
-                            ></DeviceIcons>
-                          </h2>
-                          <span>{project.description}</span>
-                          <Grid fluid>
-                            <Row>
-                              <ProjectCards
-                                technologies={project.technologies}
-                              ></ProjectCards>
-                            </Row>
-                          </Grid>
-                        </div>
-                      </Col>
-                    </Row>
-                  </div>
-                ))}
-              </ul>
+              <ProjectsDiv projects={projects}></ProjectsDiv>
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './screens/Home'
 import Blog from './screens/Blog'
 import Projects from './screens/Projects'
+
 const App = () => {
   return (
     <>
