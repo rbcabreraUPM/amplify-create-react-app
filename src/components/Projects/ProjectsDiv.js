@@ -25,7 +25,7 @@ const ProjectsDiv = ({ projects }) => {
                     <img
                       src={`/images/projects/${x.image}`}
                       alt='/'
-                      style={{ height: 'auto', maxWidth: '100%' }}
+                      style={{ maxHeight: '100%', maxWidth: '100%' }}
                     ></img>
                   </div>
                 </Col>
