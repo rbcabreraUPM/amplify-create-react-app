@@ -159,14 +159,14 @@
     .btn {
       width: 100%;
     }
-  
+/*   
     .footer-link-wrapper {
       flex-direction: column;
-    }
+    } */
   
-    .social-media-wrap {
+    /* .social-media-wrap {
       flex-direction: column;
-    }
+    } */
   }
   
   @media screen and (max-width: 768px) {
