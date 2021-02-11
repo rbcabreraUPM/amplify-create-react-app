@@ -1,0 +1,13 @@
+  /* Social Icons */
+  .social-icon-link {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 240px; */
+  }

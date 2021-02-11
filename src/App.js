@@ -1,26 +1,18 @@
-import './App.css'
-import Navbar from './components/Navbar'
-
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-// import screens
-import Home from './screens/Home'
-import Blog from './screens/Blog'
-import Projects from './screens/Projects'
-
-const App = () => {
+import Navigationbar from './components/Navigationbar.js'
+import ProfileFooter from './components/ProfileFooter.js'
+import ProfileJumbotron from './components/profile/ProfileJumbotron.js'
+import SkillsSection from './components/profile/SkillsSection.js'
+import ExperienceSection from './components/profile/ExperienceSection.js'
+function App() {
   return (
-    <>
-      <Router>
-        <Navbar></Navbar>
+    <div className='App'>
+      <Navigationbar></Navigationbar>
+      <ProfileJumbotron></ProfileJumbotron>
+      <SkillsSection></SkillsSection>
 
-        <Switch>
-          <Route path='/' exact component={Home}></Route>
-          <Route path='/projects' exact component={Projects}></Route>
-          <Route path='/blog' exact component={Blog}></Route>
-        </Switch>
-      </Router>
-    </>
+      <ExperienceSection></ExperienceSection>
+      <ProfileFooter></ProfileFooter>
+    </div>
   )
 }
 
