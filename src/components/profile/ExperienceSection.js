@@ -9,62 +9,73 @@ const ExperienceSection = () => {
       <br></br>
 
       <Row>
-        <Col xs={12} sm={12} md={6} lg={4}>
+        <Col xs={12} sm={12} md={12} lg={12}>
           <h2 style={{ textAlign: 'center' }}>Work</h2>
           <hr></hr>{' '}
-          {work.map((job) => (
-            <Card style={{ margin: '10px' }}>
-              <Card.Body>
-                <Card.Title>{job.company}</Card.Title>
-                <Card.Text>
-                  <div>
-                    <dl>
-                      <dd>- {job.role}</dd>
-                      <dd>- {job.year}</dd>
-                    </dl>
-                  </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          ))}
+          <Row>
+            {work.map((job) => (
+              <Col xs={12} sm={12} md={4} lg={4}>
+                <Card style={{ margin: '10px' }}>
+                  <Card.Img variant='top' src={`/img/${job.img}`} />
+                  <Card.Body>
+                    <Card.Title>{job.company}</Card.Title>
+                    <Card.Text>
+                      <div>
+                        <span> {job.role}</span>
+                        <br></br>
+                        <span> {job.year}</span>
+                      </div>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Col>
-        <Col xs={12} sm={12} md={6} lg={4}>
-          <h2 style={{ textAlign: 'center' }}>Education</h2>
+        <Col xs={12} sm={12} md={12} lg={12}>
+          <h2 style={{ textAlign: 'center', paddingTop: '40px' }}>Education</h2>
           <hr></hr>{' '}
-          {jsonData[1].map((education) => (
-            <Card style={{ margin: '10px' }}>
-              <Card.Body>
-                <Card.Title>{education.name}</Card.Title>
-                <Card.Text>
-                  <div>
-                    <dl>
-                      <dd>- {education.course}</dd>
-                      <dd>- {education.year}</dd>
-                    </dl>
-                  </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          ))}
+          <Row>
+            {jsonData[1].map((education) => (
+              <Col xs={12} sm={12} md={4} lg={4}>
+                <Card style={{ margin: '10px' }}>
+                  <Card.Img variant='top' src={`/img/${education.img}`} />
+                  <Card.Body>
+                    <Card.Title>{education.name}</Card.Title>
+                    <Card.Text>
+                      <div>
+                        <span>{education.course}</span>
+                        <br></br>
+                        <span>{education.year}</span>
+                      </div>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Col>
-        <Col xs={12} sm={12} md={6} lg={4}>
-          <h2 style={{ textAlign: 'center' }}>Training</h2>
+        <Col xs={12} sm={12} md={12} lg={12}>
+          <h2 style={{ textAlign: 'center', paddingTop: '40px' }}>Training</h2>
           <hr></hr>{' '}
-          {jsonData[0].map((training) => (
-            <Card style={{ margin: '10px' }}>
-              <Card.Body>
-                <Card.Title>{training.name}</Card.Title>
-                <Card.Text>
-                  <div>
-                    <dl>
-                      <dd>- {training.training}</dd>
-                      <dd>- {training.year}</dd>
-                    </dl>
-                  </div>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          ))}
+          <Row>
+            {jsonData[0].map((training) => (
+              <Col xs={12} sm={12} md={4} lg={4}>
+                <Card style={{ margin: '10px' }}>
+                  <Card.Img variant='top' src={`/img/${training.img}`} />
+                  <Card.Body>
+                    <Card.Title>{training.name}</Card.Title>
+                    <Card.Text>
+                      <div>
+                        <span>{training.training}</span> <br></br>
+                        <span> {training.year}</span>
+                      </div>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Col>
       </Row>
     </Container>
