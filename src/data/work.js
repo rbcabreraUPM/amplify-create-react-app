@@ -1,10 +1,10 @@
 const jobs = [
   {
     _id: '1',
-    company: 'PLDT GLOBAL',
-    role: 'Backend Developer',
-    year: 'August 2018- January 2021',
-    img: 'work/pgc.png',
+    company: 'Samsung Electronics',
+    role: 'Engineer',
+    year: 'February 2021-Present',
+    img: 'work/samsung.png',
   },
   {
     _id: '2',
@@ -15,10 +15,10 @@ const jobs = [
   },
   {
     _id: '3',
-    company: 'Samsung Electronics',
-    role: 'Engineer',
-    year: 'February 2021-Present',
-    img: 'work/samsung.png',
+    company: 'PLDT GLOBAL',
+    role: 'Backend Developer',
+    year: 'August 2018- January 2021',
+    img: 'work/pgc.png',
   },
 ]
 

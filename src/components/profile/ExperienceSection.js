@@ -14,8 +14,8 @@ const ExperienceSection = () => {
           <hr></hr>{' '}
           <Row>
             {work.map((job) => (
-              <Col xs={12} sm={12} md={4} lg={4}>
-                <Card style={{ margin: '10px' }}>
+              <Col xs={12} sm={12} md={6} lg={4}>
+                <Card className='shadow-lg ' style={{ margin: '10px' }}>
                   <Card.Img variant='top' src={`/img/${job.img}`} />
                   <Card.Body>
                     <Card.Title>{job.company}</Card.Title>
@@ -37,8 +37,8 @@ const ExperienceSection = () => {
           <hr></hr>{' '}
           <Row>
             {jsonData[1].map((education) => (
-              <Col xs={12} sm={12} md={4} lg={4}>
-                <Card style={{ margin: '10px' }}>
+              <Col xs={12} sm={12} md={6} lg={4}>
+                <Card className='shadow-lg ' style={{ margin: '10px' }}>
                   <Card.Img variant='top' src={`/img/${education.img}`} />
                   <Card.Body>
                     <Card.Title>{education.name}</Card.Title>
@@ -60,8 +60,8 @@ const ExperienceSection = () => {
           <hr></hr>{' '}
           <Row>
             {jsonData[0].map((training) => (
-              <Col xs={12} sm={12} md={4} lg={4}>
-                <Card style={{ margin: '10px' }}>
+              <Col xs={12} sm={12} md={6} lg={4}>
+                <Card className='shadow-lg ' style={{ margin: '10px' }}>
                   <Card.Img variant='top' src={`/img/${training.img}`} />
                   <Card.Body>
                     <Card.Title>{training.name}</Card.Title>

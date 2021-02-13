@@ -5,7 +5,7 @@ const ProfileFooter = () => {
     <div className='footer-container '>
       <section className='social-media'>
         <div className='social-media-wrap'>
-          <h6 className='website-rights'>RJBC © 2020</h6>
+          <h6 className='website-rights'>RJBC © 2021</h6>
         </div>
       </section>
     </div>
