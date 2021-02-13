@@ -11,7 +11,7 @@ function App() {
       <SkillsSection></SkillsSection>
 
       <ExperienceSection></ExperienceSection>
-      <ProfileFooter></ProfileFooter>
+      {/* <ProfileFooter></ProfileFooter> */}
     </div>
   )
 }

@@ -28,6 +28,12 @@ const Navigationbar = () => {
             >
               <i className='fab fa-github' />
             </a>
+            <a
+              className='social-icon-link github'
+              href='mailto:rbcabrera1@up.edu.ph'
+            >
+              <i class='fas fa-envelope'></i>
+            </a>
           </div>
         </Container>
       </Navbar.Brand>
