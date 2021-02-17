@@ -12,7 +12,7 @@ const ProfileJumbotron = () => {
           <Col xs={12} sm={12} md={6} lg={3}>
             <Image
               id='profle-photo'
-              className='center-image'
+              className='center-image shadow'
               src={profilePhoto}
               fluid
             />

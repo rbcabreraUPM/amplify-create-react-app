@@ -6,14 +6,14 @@ import databasePhoto from '../../static/img/database.jpg'
 import computerToolsPhoto from '../../static/img/computer-repair.png'
 const ExperienceSection = () => {
   return (
-    //backgroundColor: '#e9ecef'
-    <div style={{ padding: '20px' }}>
+    // , backgroundColor: '#F7F8FA'
+    <div style={{ padding: '40px' }}>
       <Container>
         <h2 style={{ textAlign: 'center' }}>Skills</h2>
         <hr></hr>
         <Row>
           <Col xs={12} sm={12} md={6} lg={4}>
-            <Card className='shadow-lg '>
+            <Card className='shadow'>
               <Card.Body>
                 <Card.Title>Programming Languages</Card.Title>
                 <Card.Text>
@@ -28,7 +28,7 @@ const ExperienceSection = () => {
           </Col>
 
           <Col xs={12} sm={12} md={6} lg={4}>
-            <Card className='shadow-lg '>
+            <Card className='shadow'>
               {/* <Card.Img variant='top' src={databasePhoto} /> */}
               <Card.Body>
                 <Card.Title>Database</Card.Title>
@@ -42,7 +42,7 @@ const ExperienceSection = () => {
           </Col>
 
           <Col xs={12} sm={12} md={6} lg={4}>
-            <Card className='shadow-lg '>
+            <Card className='shadow'>
               {/* <Card.Img variant='top' src={computerToolsPhoto} /> */}
               <Card.Body>
                 <Card.Title>Others</Card.Title>
