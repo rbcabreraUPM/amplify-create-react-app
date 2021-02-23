@@ -5,7 +5,7 @@ import '../styles/components/navbar.css'
 const Navigationbar = () => {
   return (
     <Navbar
-      style={{ backgroundColor: '#24285e' }}
+      style={{ backgroundColor: 'black' }}
       collapseOnSelect
       expand='lg'
       variant='dark'
@@ -32,7 +32,7 @@ const Navigationbar = () => {
               className='social-icon-link github'
               href='mailto:rbcabrera1@up.edu.ph'
             >
-              <i class='fas fa-envelope'></i>
+              <i className='fas fa-envelope'></i>
             </a>
           </div>
         </Container>

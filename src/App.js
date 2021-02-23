@@ -10,8 +10,7 @@ function App() {
       <ProfileJumbotron></ProfileJumbotron>
       <SkillsSection></SkillsSection>
 
-      <ExperienceSection></ExperienceSection>
-      {/* <ProfileFooter></ProfileFooter> */}
+      {/*<ExperienceSection></ExperienceSection> */}
     </div>
   )
 }

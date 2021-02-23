@@ -4,15 +4,16 @@ import { Row, Col, Card, Container } from 'react-bootstrap'
 import programmingLang from '../../static/img/pl.jpg'
 import databasePhoto from '../../static/img/database.jpg'
 import computerToolsPhoto from '../../static/img/computer-repair.png'
-const ExperienceSection = () => {
+import ExperienceSection from './ExperienceSection'
+const SkillSection = () => {
   return (
     // , backgroundColor: '#F7F8FA'
-    <div style={{ padding: '40px' }}>
-      <Container>
-        <h2 style={{ textAlign: 'center' }}>Skills</h2>
-        <hr></hr>
-        <Row>
-          <Col xs={12} sm={12} md={6} lg={4}>
+    <div style={{ padding: '20px' }}>
+      <Row>
+        <Col xs={12} sm={12} md={12} lg={3} style={{ paddingBottom: '30px' }}>
+          <h2 style={{ textAlign: 'center' }}>Skills</h2>
+          <hr></hr>
+          <Col xs={12} sm={12} md={12} lg={12}>
             <Card className='shadow'>
               <Card.Body>
                 <Card.Title>Programming Languages</Card.Title>
@@ -27,7 +28,7 @@ const ExperienceSection = () => {
             </Card>
           </Col>
 
-          <Col xs={12} sm={12} md={6} lg={4}>
+          <Col xs={12} sm={12} md={12} lg={12}>
             <Card className='shadow'>
               {/* <Card.Img variant='top' src={databasePhoto} /> */}
               <Card.Body>
@@ -41,7 +42,7 @@ const ExperienceSection = () => {
             </Card>
           </Col>
 
-          <Col xs={12} sm={12} md={6} lg={4}>
+          <Col xs={12} sm={12} md={12} lg={12}>
             <Card className='shadow'>
               {/* <Card.Img variant='top' src={computerToolsPhoto} /> */}
               <Card.Body>
@@ -54,10 +55,13 @@ const ExperienceSection = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-      </Container>
+        </Col>
+        <Col xs={12} sm={12} md={12} lg={9}>
+          <ExperienceSection></ExperienceSection>
+        </Col>
+      </Row>
     </div>
   )
 }
 
-export default ExperienceSection
+export default SkillSection
