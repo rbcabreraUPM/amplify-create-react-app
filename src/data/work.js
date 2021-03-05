@@ -2,7 +2,7 @@ const jobs = [
   {
     _id: '1',
     company: 'Samsung Electronics',
-    role: 'Engineer',
+    role: 'Software Engineer',
     year: 'February 2021-Present',
     img: 'work/samsung.png',
   },

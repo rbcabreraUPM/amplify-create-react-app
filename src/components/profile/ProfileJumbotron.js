@@ -35,10 +35,14 @@ const ProfileJumbotron = () => {
               <h2
                 style={{ textAlign: 'center', paddingTop: '10px' }}
                 id='profile-complete-name'
+                className='profile-title'
               >
                 REUBEN JOSEPH B. CABRERA
               </h2>
-              <h3 style={{ textAlign: 'center', fontWeight: 'lighter' }}>
+              <h3
+                className='profile-title'
+                style={{ textAlign: 'center', fontWeight: 'lighter' }}
+              >
                 SOFTWARE ENGINEER | LECTURER
               </h3>
               {/* <span>
